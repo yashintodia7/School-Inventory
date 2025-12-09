@@ -241,3 +241,23 @@ POST /book-sets/create - Create new book set
 PUT /book-sets/:id - Update book set
 
 DELETE /book-sets/:id - Delete book set
+
+**🧠 System Design Explanation**
+
+**Q1: Explain the database design**
+
+Answer: We use 7 entities: Board, Medium, Class, AcademicYear, Book, BookSet, and BookSetItem. BookSet connects to Board, Medium, Class, and Year through foreign keys. BookSetItem is a junction table that creates a many-to-many relationship between BookSet and Books, storing the quantity for each book in a set.
+
+**Q2: Why separate BookSet and BookSetItems?**
+
+Answer: To implement proper normalization. If we stored books directly in BookSet, we'd duplicate book information. The separate table allows us to reuse books across multiple sets, maintain referential integrity, and efficiently query which sets contain specific books.
+
+**Q3: What are CRUD operations?**
+
+Answer: CRUD stands for Create, Read, Update, Delete - the four basic operations for data persistence. In our API: POST creates book sets, GET reads/filters them, PUT updates existing sets, and DELETE removes them. Each operation corresponds to specific HTTP methods and database queries.
+
+**Q4: How does the school workflow work?**
+
+Answer: First, administrators set up master data (boards, mediums, classes, years, books). Then they create Book Sets by selecting a combination of these parameters and adding relevant books with quantities. The system allows filtering sets by any parameter, viewing detailed book lists, and managing sets through their lifecycle.
+
+
