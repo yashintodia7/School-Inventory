@@ -242,6 +242,32 @@ PUT /book-sets/:id - Update book set
 
 DELETE /book-sets/:id - Delete book set
 
+**📝 API Request Examples**
+
+**Create Book Set**
+
+Endpoint: POST /api/book-sets/create
+
+**Request Body:**
+
+{
+  "board_id": "675d1a2b3c4d5e6f7a8b9c0d",
+  "medium_id": "675d1a2b3c4d5e6f7a8b9c0e",
+  "class_id": "675d1a2b3c4d5e6f7a8b9c0f",
+  "year_id": "675d1a2b3c4d5e6f7a8b9c10",
+  "set_name": "Class 3 English Medium Set",
+  "books": [
+    {
+      "book_id": "675d1a2b3c4d5e6f7a8b9c11",
+      "quantity": 1
+    },
+    {
+      "book_id": "675d1a2b3c4d5e6f7a8b9c12",
+      "quantity": 2
+    }
+  ]
+}
+
 **🧠 System Design Explanation**
 
 **Q1: Explain the database design**
