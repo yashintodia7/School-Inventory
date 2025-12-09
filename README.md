@@ -287,4 +287,3 @@ Answer: CRUD stands for Create, Read, Update, Delete - the four basic operations
 
 Answer: First, administrators set up master data (boards, mediums, classes, years, books). Then they create Book Sets by selecting a combination of these parameters and adding relevant books with quantities. The system allows filtering sets by any parameter, viewing detailed book lists, and managing sets through their lifecycle.
 
-
