@@ -112,5 +112,128 @@ Git
 
 **Step 1: Clone the Repository**
 
+git clone git@github.com:yashintodia7/School-Inventory.git
 
+cd school-book-inventory
 
+**Step 2: Backend Setup**
+
+bash# Navigate to backend directory
+
+cd book-inventory-backend
+
+# Install dependencies
+
+npm install
+
+# Create .env file
+
+cp .env.example .env
+
+**Option A: MongoDB Atlas (Cloud)**
+
+envMONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/book_inventory?retryWrites=true&w=majority
+
+PORT=5000
+
+**Seed Sample Data:**
+
+bashnode seed.js
+
+**Start Backend Server:**
+
+bashnpm run dev
+
+**Expected output:**
+
+🚀 Server running on port 5000
+
+✅ MongoDB Connected: localhost
+
+**Step 3: Frontend Setup**
+
+bash# Open new terminal
+
+cd book-inventory-frontend
+
+# Install dependencies
+
+npm install
+
+# Start frontend
+
+npm start
+
+**🔌 API Endpoints**
+Base URL: http://localhost:5000/api
+**Boards**
+
+GET /boards - Get all boards
+
+GET /boards/:id - Get single board
+
+POST /boards - Create board
+
+PUT /boards/:id - Update board
+
+DELETE /boards/:id - Delete board
+
+**Mediums**
+
+GET /mediums - Get all mediums
+
+GET /mediums/:id - Get single medium
+
+POST /mediums - Create medium
+
+PUT /mediums/:id - Update medium
+
+DELETE /mediums/:id - Delete medium
+
+**Classes**
+
+GET /classes - Get all classes
+
+GET /classes/:id - Get single class
+
+POST /classes - Create class
+
+PUT /classes/:id - Update class
+
+DELETE /classes/:id - Delete class
+
+**Academic Years**
+
+GET /years - Get all years
+
+GET /years/:id - Get single year
+
+POST /years - Create year
+
+PUT /years/:id - Update year
+
+DELETE /years/:id - Delete year
+
+**Books**
+
+GET /books - Get all books
+
+GET /books/:id - Get single book
+
+POST /books - Create book
+
+PUT /books/:id - Update book
+
+DELETE /books/:id - Delete book
+
+**Book Sets**
+
+GET /book-sets - Get all book sets (with filters)
+
+GET /book-sets/:id - Get single book set with books
+
+POST /book-sets/create - Create new book set
+
+PUT /book-sets/:id - Update book set
+
+DELETE /book-sets/:id - Delete book set
