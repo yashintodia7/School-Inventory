@@ -164,8 +164,12 @@ npm install
 
 npm start
 
+http://localhost:3000
+
 **🔌 API Endpoints**
+
 Base URL: http://localhost:5000/api
+
 **Boards**
 
 GET /boards - Get all boards
