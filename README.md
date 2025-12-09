@@ -102,4 +102,15 @@ book_id - Reference to Book
 quantity - Number of books
 
 
+**🚀 Installation & Setup**
+Prerequisites
+
+Node.js (v14 or higher)
+MongoDB (Local installation OR MongoDB Atlas account)
+npm or yarn
+Git
+
+**Step 1: Clone the Repository**
+
+
 
