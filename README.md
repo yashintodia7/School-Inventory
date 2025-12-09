@@ -264,24 +264,15 @@ Endpoint: POST /api/book-sets/create
   
   "books": [
   
-    {
-    
-      "book_id": "675d1a2b3c4d5e6f7a8b9c11",
-      
-      "quantity": 1
-      
+    { "book_id": "675d1a2b3c4d5e6f7a8b9c11",
+       "quantity": 1
     },
     
-    {
-    
-      "book_id": "675d1a2b3c4d5e6f7a8b9c12",
-      
+    { "book_id": "675d1a2b3c4d5e6f7a8b9c12",
       "quantity": 2
       
     }
-    
-  ]
-  
+     ]
 }
 
 **🧠 System Design Explanation**
